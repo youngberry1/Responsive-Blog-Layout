@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1e1e2f;
+  height: 100vh;
+}
+
+main {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+h1,
+h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+}
+
+.featured-article,
+p {
+  font-family: "Chewy", system-ui;
+  text-align: center;
+}
+
+time {
+  font-family: "Chewy", system-ui;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+footer {
+  background-color: #1e1e2f;
+  color: #eaeaea;
+  font-family: "Chewy", system-ui;
+  font-size: 0.8rem;
+  font-style: italic;
+  text-align: center;
+  padding: 1rem;
+}
+
+article {
+  font-family: "Chewy", system-ui;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 1rem 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+header {
+  font-family: "Chewy", system-ui;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  background: linear-gradient(90deg, #00d9f5, #ff6f61, #a3e635);
+  background-size: 300% 300%;
+  color: #1e1e2f; /* Dark navy blue text for contrast */
+  padding: 1rem 0;
+  animation: gradientAnimation 10s ease infinite; /* Slow gradient animation */
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  text-align: center;
+  color: #ff6f61; /* Bright coral for headings */
+}
+
+nav {
+  font-family: "Chewy", system-ui;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e1e2f; /* Matches the body background */
+  color: #eaeaea;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: #00d9f5; /* Vibrant cyan for links */
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #a3e635; /* Lime green hover effect */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.featured-article img {
+  max-width: 100%;
+  height: auto;
+  border: 4px solid #ff6f61; /* Bright coral border for images */
+  border-radius: 0 0 8px 8px;
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+a:visited {
+  color: #ff6f61;
+}
+a:active {
+  color: #ffffff;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+button {
+  background-color: #ff6f61; /* Bright coral for buttons */
+  color: #1e1e2f;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #a3e635; /* Lime green hover effect */
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 0;
+  font-family: "Chewy", system-ui;
+  gap: 1rem;
+}
+
+.social-media a {
+  color: #00d9f5; /* Vibrant cyan for social media links */
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.social-media a:hover {
+  color: #a3e635; /* Lime green hover effect */
+}
+
+.theme-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background-color: #ff6f61; /* Bright coral */
+    color: #1e1e2f; /* Dark navy blue */
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Chewy", system-ui;
+    font-size: 1rem;
+    z-index: 1000;
+}
+
+.theme-toggle:hover {
+    background-color: #a3e635; /* Lime green hover effect */
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1); /* Transparent white for glass effect */
+    backdrop-filter: blur(10px); /* Glassmorphism blur */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 1rem;
+    margin: 1rem;
+    color: #eaeaea; /* Light text color */
+    font-family: "Chewy", system-ui;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Subtle lift effect */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Responsive Styles */
+/* Adjustments for smaller screens */
+/* This media query will apply styles for screens smaller than 768px */
+
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  article {
+    font-size: 1rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+  .featured-article {
+    font-size: 1rem;
+  }
+
+  .featured-article img {
+    width: 100%;
+  }
+
+  nav {
+    width: 50%;
+    margin: 0 auto;
+    padding: 1rem 0;
+  }
+
+  .social-media {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .social-media a {
+    font-size: 1.2rem;
+  }
+
+  a:visited {
+    color: #ff6f61; /* Bright coral for visited links */
+  }
+  a:active {
+    color: #ffffff; /* Lime green for active links */
+  }
+}
+
+/* End of media query for smaller screens */
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
