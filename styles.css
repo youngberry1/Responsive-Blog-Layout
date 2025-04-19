@@ -149,41 +149,41 @@ button:hover {
 }
 
 .theme-toggle {
-    position: fixed;
-    top: 0rem;
-    right: 0rem;
-    background-color: #ff6f61; /* Bright coral */
-    color: #1e1e2f; /* Dark navy blue */
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    cursor: pointer;
-    font-family: "Chewy", system-ui;
-    font-size: 1rem;
-    z-index: 1000;
-    width: auto;
-    height: auto;
+  position: fixed;
+  top: 0rem;
+  right: 0rem;
+  background-color: #ff6f61; /* Bright coral */
+  color: #1e1e2f; /* Dark navy blue */
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Chewy", system-ui;
+  font-size: 1rem;
+  z-index: 1000;
+  width: auto;
+  height: auto;
 }
 
 .theme-toggle:hover {
-    background-color: #a3e635; /* Lime green hover effect */
+  background-color: #a3e635; /* Lime green hover effect */
 }
 
 .card {
-    background: rgba(255, 255, 255, 0.1); /* Transparent white for glass effect */
-    backdrop-filter: blur(10px); /* Glassmorphism blur */
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    padding: 1rem;
-    margin: 1rem;
-    color: #eaeaea; /* Light text color */
-    font-family: "Chewy", system-ui;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: rgba(255, 255, 255, 0.1); /* Transparent white for glass effect */
+  backdrop-filter: blur(10px); /* Glassmorphism blur */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  padding: 1rem;
+  margin: 1rem;
+  color: #eaeaea; /* Light text color */
+  font-family: "Chewy", system-ui;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px); /* Subtle lift effect */
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  transform: translateY(-5px); /* Subtle lift effect */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
 
 /* Responsive Styles */
@@ -245,31 +245,18 @@ button:hover {
     width: auto;
     height: auto;
   }
- 
-
-  @keyframes gradientAnimation {
-    0% {
-        background-position: 4% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
 }
 
 /* End of media query for smaller screens */
 
 @keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
