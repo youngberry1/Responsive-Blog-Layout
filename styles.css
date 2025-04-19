@@ -9,11 +9,6 @@ body {
   height: 100vh;
 }
 
-main {
-  background-color: #000000;
-  color: #ffffff;
-}
-
 h1,
 h2 {
   font-family: "Oswald", sans-serif;
@@ -155,8 +150,8 @@ button:hover {
 
 .theme-toggle {
     position: fixed;
-    top: 1rem;
-    right: 1rem;
+    top: 0rem;
+    right: 0rem;
     background-color: #ff6f61; /* Bright coral */
     color: #1e1e2f; /* Dark navy blue */
     border: none;
@@ -166,6 +161,8 @@ button:hover {
     font-family: "Chewy", system-ui;
     font-size: 1rem;
     z-index: 1000;
+    width: auto;
+    height: auto;
 }
 
 .theme-toggle:hover {
@@ -238,6 +235,29 @@ button:hover {
   a:active {
     color: #ffffff; /* Lime green for active links */
   }
+
+  .theme-toggle {
+    position: fixed;
+    top: 0rem;
+    right: 0rem;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    width: auto;
+    height: auto;
+  }
+ 
+
+  @keyframes gradientAnimation {
+    0% {
+        background-position: 4% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 }
 
 /* End of media query for smaller screens */
